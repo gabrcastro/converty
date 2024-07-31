@@ -1,7 +1,6 @@
 import { describe, expect, it } from "vitest";
-import { LengthFuntions } from "../../utils/functions/length.function";
+import { LengthFuntions } from "../../utils/functions/length.functions";
 
-// Crie a instância da classe antes de todos os testes
 const lengthFunctions = new LengthFuntions();
 
 describe("LengthFunctions", () => {
