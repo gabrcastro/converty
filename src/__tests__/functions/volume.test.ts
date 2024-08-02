@@ -1,11 +1,11 @@
-import { CapacityFunctions } from "../../utils/functions/capacity.functions";
+import { VolumeFunctions } from "../../utils/functions/volume.functions";
 import { describe, expect, it } from "vitest";
 
-const capacityFunctions = new CapacityFunctions();
+const functions = new VolumeFunctions();
 
 describe("Capacity Functions", () => {
   it("kiloliter working", () => {
-    const result = capacityFunctions.kiloliterTo(0.001);
+    const result = functions.kiloliterTo(0.001);
     expect(result.kiloliter).toBe(0.001);
 
     expect(result.hectoliter).toBe(0.01);
@@ -17,7 +17,7 @@ describe("Capacity Functions", () => {
   });
 
   it("hectoliter working", () => {
-    const result = capacityFunctions.hectoliterTo(0.01);
+    const result = functions.hectoliterTo(0.01);
     expect(result.hectoliter).toBe(0.01);
 
     expect(result.kiloliter).toBe(0.001);
@@ -29,7 +29,7 @@ describe("Capacity Functions", () => {
   });
 
   it("decaliter working", () => {
-    const result = capacityFunctions.decaliterTo(0.1);
+    const result = functions.decaliterTo(0.1);
     expect(result.decaliter).toBe(0.1);
 
     expect(result.kiloliter).toBe(0.001);
@@ -41,7 +41,7 @@ describe("Capacity Functions", () => {
   });
 
   it("liter working", () => {
-    const result = capacityFunctions.literTo(1);
+    const result = functions.literTo(1);
     expect(result.liter).toBe(1);
 
     expect(result.kiloliter).toBe(0.001);
@@ -53,7 +53,7 @@ describe("Capacity Functions", () => {
   });
 
   it("deciliter working", () => {
-    const result = capacityFunctions.deciliterTo(10);
+    const result = functions.deciliterTo(10);
     expect(result.deciliter).toBe(10);
 
     expect(result.kiloliter).toBe(0.001);
@@ -65,7 +65,7 @@ describe("Capacity Functions", () => {
   });
 
   it("centiliter working", () => {
-    const result = capacityFunctions.centiliterTo(100);
+    const result = functions.centiliterTo(100);
     expect(result.centiliter).toBe(100);
 
     expect(result.kiloliter).toBe(0.001);
@@ -77,7 +77,7 @@ describe("Capacity Functions", () => {
   });
 
   it("mililiter working", () => {
-    const result = capacityFunctions.mililitroTo(1000);
+    const result = functions.mililitroTo(1000);
     expect(result.milliliter).toBe(1000);
 
     expect(result.kiloliter).toBe(0.001);

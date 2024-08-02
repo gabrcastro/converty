@@ -1,0 +1,36 @@
+{
+  "titles": {
+    "acceleration": "Aceleração",
+    "volume": "Volume",
+    "density": "Densidade",
+    "energy": "Energia",
+    "force": "Força",
+    "length": "Comprimento",
+    "mass": "Massa",
+    "power": "Potência",
+    "speed": "Velocidade",
+    "time": "Tempo"
+  },
+  "pages": {
+    "info": "O Converty é uma plataforma especializada na conversão de unidades de medida. Embora atualmente não ofereçamos suporte a todas as unidades, estamos continuamente expandindo nossa cobertura. Se você tiver interesse em uma unidade específica que ainda não esteja disponível, por favor, entre em contato conosco através dos nossos canais de atendimento."
+  },
+  "functions": {
+    "acceleration": {
+      "m/s": "Metro por segundo² - (m/s²)",
+      "ft/s": "Pé por segundo² - (ft/s²)",
+      "g": "Gravidade - (G)",
+      "gal": "Galileo - (gal)",
+      "in/s": "Polegada por segundo² - (in/s²)"
+    },
+    "volume": {
+      "kl": "Quilolitro - (kl)",
+      "hl": "Hectolitro - (hl)",
+      "l": "Litro - (l)",
+      "dal": "Decalitro - (dal)",
+      "cl": "Centilitro - (cl)",
+      "ml": "Mililitro - (ml)"
+    },
+    "mult": "multiplique por",
+    "divi": "divida por"
+  }
+}

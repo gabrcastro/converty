@@ -1,0 +1,36 @@
+{
+  "titles": {
+    "acceleration": "Acceleration",
+    "volume": "Volume",
+    "density": "Density",
+    "energy": "Energy",
+    "force": "Force",
+    "length": "Length",
+    "mass": "Mass",
+    "power": "Power",
+    "speed": "Speed",
+    "time": "Time"
+  },
+  "pages": {
+    "info": "Converty is a platform that specializes in converting units of measurement. Although we don't currently support all units, we are continually expanding our coverage. If you are interested in a specific unit that is not yet available, please contact us through our service channels."
+  },
+  "functions": {
+    "acceleration": {
+      "m/s": "Meter per second² - (m/s²)",
+      "ft/s": "Foot per second² - (ft/s²)",
+      "g": "Gravity - (G)",
+      "gal": "Galileo - (gal)",
+      "in/s": "Inch per second² - (in/s²)"
+    },
+    "volume": {
+      "kl": "Kiloliter - (kl)",
+      "hl": "Hectoliter - (hl)",
+      "l": "Liter - (l)",
+      "dal": "Decaliter - (dal)",
+      "cl": "Centiliter - (cl)",
+      "ml": "Mililiter - (ml)"
+    },
+    "mult": "multiply by",
+    "divi": "divide by"
+  }
+}

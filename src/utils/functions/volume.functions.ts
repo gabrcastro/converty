@@ -1,4 +1,4 @@
-type CapacityResult = {
+type VolumeResult = {
   kiloliter: number;
   hectoliter: number;
   decaliter: number;
@@ -8,8 +8,8 @@ type CapacityResult = {
   milliliter: number;
 };
 
-export class CapacityFunctions {
-  kiloliterTo(value: number): CapacityResult {
+export class VolumeFunctions {
+  kiloliterTo(value: number): VolumeResult {
     if (value < 0) throw new Error("Input value cannot be negative");
     if (typeof value === String()) throw new Error("Type is wrong");
 
@@ -31,7 +31,7 @@ export class CapacityFunctions {
     };
   }
 
-  hectoliterTo(value: number): CapacityResult {
+  hectoliterTo(value: number): VolumeResult {
     if (value < 0) throw new Error("Input value cannot be negative");
     if (typeof value === String()) throw new Error("Type is wrong");
 
@@ -53,7 +53,7 @@ export class CapacityFunctions {
     };
   }
 
-  decaliterTo(value: number): CapacityResult {
+  decaliterTo(value: number): VolumeResult {
     if (value < 0) throw new Error("Input value cannot be negative");
     if (typeof value === String()) throw new Error("Type is wrong");
 
@@ -75,7 +75,7 @@ export class CapacityFunctions {
     };
   }
 
-  literTo(value: number): CapacityResult {
+  literTo(value: number): VolumeResult {
     if (value < 0) throw new Error("Input value cannot be negative");
     if (typeof value === String()) throw new Error("Type is wrong");
 
@@ -97,7 +97,7 @@ export class CapacityFunctions {
     };
   }
 
-  deciliterTo(value: number): CapacityResult {
+  deciliterTo(value: number): VolumeResult {
     if (value < 0) throw new Error("Input value cannot be negative");
     if (typeof value === String()) throw new Error("Type is wrong");
 
@@ -119,7 +119,7 @@ export class CapacityFunctions {
     };
   }
 
-  centiliterTo(value: number): CapacityResult {
+  centiliterTo(value: number): VolumeResult {
     if (value < 0) throw new Error("Input value cannot be negative");
     if (typeof value === String()) throw new Error("Type is wrong");
 
@@ -141,7 +141,7 @@ export class CapacityFunctions {
     };
   }
 
-  mililitroTo(value: number): CapacityResult {
+  mililitroTo(value: number): VolumeResult {
     if (value < 0) throw new Error("Input value cannot be negative");
     if (typeof value === String()) throw new Error("Type is wrong");
 
