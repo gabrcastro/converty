@@ -12,7 +12,8 @@
     "time": "Time"
   },
   "pages": {
-    "info": "Converty is a platform that specializes in converting units of measurement. Although we don't currently support all units, we are continually expanding our coverage. If you are interested in a specific unit that is not yet available, please contact us through our service channels."
+    "info": "Converty is a platform that specializes in converting units of measurement. Although we don't currently support all units, we are continually expanding our coverage. If you are interested in a specific unit that is not yet available, please contact us through our service channels.",
+    "formula": "Formula"
   },
   "functions": {
     "acceleration": {
@@ -25,8 +26,9 @@
     "volume": {
       "kl": "Kiloliter - (kl)",
       "hl": "Hectoliter - (hl)",
-      "l": "Liter - (l)",
       "dal": "Decaliter - (dal)",
+      "l": "Liter - (l)",
+      "dl": "Deciliter - (dl)",
       "cl": "Centiliter - (cl)",
       "ml": "Mililiter - (ml)"
     },

@@ -4,15 +4,10 @@ import { functionType, languages } from "@/utils/constants/function_type.enum";
 import { Card } from "../ui/card";
 import { ChangeEvent, ChangeEventHandler, FormEvent, useState } from "react";
 import { FunctionItems } from "@/utils/functions.types";
-import {
-  AccelerationFunctions,
-  AccelerationResult,
-} from "@/utils/functions/acceleration.functions";
 
 export function AccelerationComponent() {
   const t = useTranslations(languages.FUNCTIONS_A);
   const t2 = useTranslations(languages.FUNCTIONS);
-  const functions: AccelerationFunctions = new AccelerationFunctions();
 
   const [values, setValues] = useState({
     msValue: "",
@@ -38,16 +33,6 @@ export function AccelerationComponent() {
     handleChange(name, event);
   };
 
-  function setAllValues(newValues: AccelerationResult) {
-    setValues({
-      msValue: newValues.meterPerSecond2.toString(),
-      ftsValue: newValues.footPerSecond2.toString(),
-      gValue: newValues.gravity.toString(),
-      galValue: newValues.galileo.toString(),
-      insValue: newValues.inchPerSecond2.toString(),
-    });
-  }
-
   const items: FunctionItems[] = [
     {
       title: t("m/s"),
@@ -59,12 +44,6 @@ export function AccelerationComponent() {
       ],
       inputValie: values.msValue,
       changeInputValue: (val: string) => handleInputChange("msValue", val),
-      onClick: () => {
-        const result: AccelerationResult = functions.mPerSecond2To(
-          +values.msValue
-        );
-        setAllValues(result);
-      },
     },
     {
       title: t("ft/s"),
@@ -76,12 +55,6 @@ export function AccelerationComponent() {
       ],
       inputValie: values.ftsValue,
       changeInputValue: (val: string) => handleInputChange("ftsValue", val),
-      onClick: () => {
-        const result: AccelerationResult = functions.footPerSecond2To(
-          +values.ftsValue
-        );
-        setAllValues(result);
-      },
     },
     {
       title: t("g"),
@@ -93,10 +66,6 @@ export function AccelerationComponent() {
       ],
       inputValie: values.gValue,
       changeInputValue: (val: string) => handleInputChange("gValue", val),
-      onClick: () => {
-        const result: AccelerationResult = functions.gravityTo(+values.gValue);
-        setAllValues(result);
-      },
     },
     {
       title: t("gal"),
@@ -108,10 +77,6 @@ export function AccelerationComponent() {
       ],
       inputValie: values.galValue,
       changeInputValue: (val: string) => handleInputChange("galValue", val),
-      onClick: () => {
-        const result: AccelerationResult = functions.galTo(+values.galValue);
-        setAllValues(result);
-      },
     },
     {
       title: t("in/s"),
@@ -123,12 +88,6 @@ export function AccelerationComponent() {
       ],
       inputValie: values.insValue,
       changeInputValue: (val: string) => handleInputChange("insValue", val),
-      onClick: () => {
-        const result: AccelerationResult = functions.inchPerSecond2To(
-          +values.insValue
-        );
-        setAllValues(result);
-      },
     },
   ];
 
@@ -143,7 +102,6 @@ export function AccelerationComponent() {
               formula={item.formula}
               inputValue={item.inputValie}
               changeInputValue={item.changeInputValue}
-              onClick={item.onClick}
             />
           );
         })}

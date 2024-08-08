@@ -1,4 +1,4 @@
-type AccelerationResult = {
+export type AccelerationResult = {
   meterPerSecond2: number;
   footPerSecond2: number;
   gravity: number;

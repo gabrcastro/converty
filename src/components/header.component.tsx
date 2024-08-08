@@ -17,6 +17,7 @@ import {
 import { links } from "@/utils/constants/links.enum";
 import clsx from "clsx";
 import Image from "next/image";
+import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { RiMenu4Line } from "react-icons/ri";
 
@@ -34,16 +35,18 @@ export function HeaderComponent({ items }: HeaderProps) {
 
   return (
     <div className="flex flex-row w-full justify-between items-center px-10 py-5">
-      <span className="flex gap-2 items-center text-base font-bold text-zinc-900">
+      <Link
+        href={"/"}
+        className="flex gap-2 items-center text-base font-bold text-zinc-900"
+      >
         <Image
           src="/logo.png"
           alt=""
-          width={500}
-          height={500}
-          className="w-4 h-4"
+          width={100}
+          height={100}
+          className="h-min"
         />
-        CONVERTY
-      </span>
+      </Link>
       <div className="flex gap-3">
         <div className=" gap-3 hidden lg:flex">
           <a

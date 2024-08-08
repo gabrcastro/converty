@@ -1,4 +1,4 @@
-type VolumeResult = {
+export type VolumeResult = {
   kiloliter: number;
   hectoliter: number;
   decaliter: number;
