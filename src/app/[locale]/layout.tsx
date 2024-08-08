@@ -5,6 +5,7 @@ import type { Metadata } from "next";
 import { Nunito } from "next/font/google";
 import "../globals.css";
 import { Toaster } from "@/components/ui/toaster";
+import { Analytics } from "@vercel/analytics/react";
 
 const nunito = Nunito({ subsets: ["latin"] });
 
@@ -29,6 +30,8 @@ export default async function RootLayout({
       <body className={nunito.className}>
         <NextIntlClientProvider messages={messages}>
           {children}
+
+          <Analytics />
           <Toaster />
         </NextIntlClientProvider>
       </body>
